@@ -34,7 +34,6 @@ class RouteProcessor extends Module
 	/**
      * Create a new RouteProcessor instance.
      *
-     * @return void
      */
 	public function __construct() { parent::init(); }
 
@@ -47,7 +46,7 @@ class RouteProcessor extends Module
 	 * 
 	 * @return bool
 	 */
-	public function matchMethod(string $method, string|callable $callable = null, 
+	public function matchMethod(string $method, string|callable|null $callable = null, 
 		?array $params = []): bool 
 	{
 		if($_SERVER['REQUEST_METHOD'] == strtoupper($method)) {
@@ -67,7 +66,7 @@ class RouteProcessor extends Module
 	 * 
 	 * @return bool
 	 */
-	public function matchMethods(?array $methods, string|callable $callable = null, 
+	public function matchMethods(?array $methods, string|callable|null $callable = null, 
 		?array $params = []): bool 
 	{
 		if(in_array($_SERVER['REQUEST_METHOD'], $methods)) {

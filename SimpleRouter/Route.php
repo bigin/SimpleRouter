@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace Scriptor;
 
 /**
- * A simple route registrar module
+ * The route registrar class
  */
 class Route extends Module
 {
