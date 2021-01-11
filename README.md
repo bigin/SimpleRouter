@@ -2,4 +2,4 @@
 
 SimpleRouter module can be used to provide URL routing in your Scriptor application.
 
-## More info: https://scriptor-cms.info/extensions/extensions-modules/simplerouter/
+#### More info: https://scriptor-cms.info/extensions/extensions-modules/simplerouter/
