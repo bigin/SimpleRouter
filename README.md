@@ -14,10 +14,11 @@ use Scriptor\Route;
 
 // Add a new route to your Scriptor application
 Route::add('/info', function() {
-    echo 'This is a simple URL Router module for Scriptor CMS.';
+    echo 'This is a simple URL router module for Scriptor CMS.';
 }, 'GET');
 
-// Add a new route GET and POST for the same pattern and map it to the controller
+// Add a new route GET and POST for the same 
+// pattern and map it to the controller.
 Route::add('/contact', 
     'Scriptor\Controllers\Controller::contact', 
     ['GET', 'POST']
