@@ -18,7 +18,10 @@ Route::add('/info', function() {
 }, 'GET');
 
 // Add a new route GET and POST for the same pattern and map it to the controller
-Route::add('/contact', 'Scriptor\Controllers\Controller::contact', ['GET', 'POST']);
+Route::add('/contact', 
+	'Scriptor\Controllers\Controller::contact', 
+	['GET', 'POST']
+);
 
 // Execute router
 Route::run();
