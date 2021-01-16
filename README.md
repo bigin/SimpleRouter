@@ -17,10 +17,9 @@ Route::add('/info', function() {
     echo 'This is a simple URL router module for Scriptor CMS.';
 }, 'GET');
 
-// Add a new route GET and POST for the same 
-// pattern and map it to the controller.
-Route::add('/contact', 
-    'Scriptor\Controllers\Controller::contact', 
+/* Add a new route GET and POST for the same 
+  pattern and map it to the controller. */
+Route::add('/contact', 'Controllers\Controller::contact', 
     ['GET', 'POST']
 );
 
