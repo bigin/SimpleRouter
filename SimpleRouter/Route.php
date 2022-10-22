@@ -1,7 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Scriptor;
+namespace Scriptor\Modules;
+
+use Scriptor\Core\Module;
+use Scriptor\Core\Scriptor;
+use Scriptor\Module\RouteProcessor;
 
 /**
  * The route registrar class
@@ -52,7 +56,7 @@ class Route extends Module
 	 * 
 	 * @return \Scriptor\RouteProcessor
 	 */
-	public static function processor(): RouteProcessor 
+	public static function processor():  RouteProcessor 
 	{
 		if(! self::$_processor) {
 			Scriptor::load(__DIR__.'/RouteProcessor.php');

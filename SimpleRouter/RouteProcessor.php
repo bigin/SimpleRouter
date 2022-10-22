@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Scriptor;
+namespace Scriptor\Module;
+
+use Scriptor\Core\Module;
 
 class RouteProcessor extends Module
 {
