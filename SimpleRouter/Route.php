@@ -1,11 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Scriptor\Modules;
+namespace Scriptor\Modules\SimpleRouter;
 
 use Scriptor\Core\Module;
 use Scriptor\Core\Scriptor;
-use Scriptor\Module\RouteProcessor;
 
 /**
  * The route registrar class

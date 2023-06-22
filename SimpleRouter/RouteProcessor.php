@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Scriptor\Module;
+namespace Scriptor\Modules\SimpleRouter;
 
 use Scriptor\Core\Module;
 

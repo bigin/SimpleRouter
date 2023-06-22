@@ -1,28 +1,26 @@
-![SimpleRouter image](https://scriptor-cms.info/extensions/data/uploads/extensions/module/9/simple-router-cover.png?v=1 "SimpleRouter Cover Image")
+# SimpleRouter
+The SimpleRouter module provides URL routing functionality for your Scriptor application.
 
-SimpleRouter module can be used to provide URL routing in your Scriptor application.
+### Usage
+To create custom routes for your application, follow these steps:
 
-### More infos: 
-https://scriptor-cms.info/extensions/extensions-modules/simplerouter/
+1. Open the `_routes.php` file.
+2. Use the `Route::add()` method to add new routes.
+3. Provide the route (path), the closure or controller method to execute when the route is matched, and the associated HTTP verb(s) as parameters to the `Route::add()` method.
 
-### Here's an example of usage
+Example:
 
 ```php
 <?php
+use Scriptor\Modules\SimpleRouter\Route;
 
-use Scriptor\Route;
-
-// Add a new route to your Scriptor application
-Route::add('/info', function() {
-    echo 'This is a simple URL router module for Scriptor CMS.';
+// Add a route for the root URL
+Route::add('/', function() {
+    echo 'Welcome to SimpleRouter for Scriptor CMS!';
 }, 'GET');
 
-/* Add a new route GET and POST for the same 
-  pattern and map it to the controller. */
-Route::add('/contact', 'Controllers\Controller::contact', 
-    ['GET', 'POST']
-);
-
-// Execute router
+// Execute the router
 Route::run();
 ```
+
+For more examples and information, you can visit the [SimpleRouter documentation](https://scriptor-cms.info/extensions/extensions-modules/simplerouter/).
