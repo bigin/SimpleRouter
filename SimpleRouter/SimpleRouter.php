@@ -17,7 +17,7 @@ class SimpleRouter extends Module
 	 * Use ~~ echo Quill::VERSION; ~~~
 	 * to get the current module version
 	 */
-	const VERSION = '1.5.0';
+	const VERSION = '1.5.1';
 
 	private static $initialized;
 
